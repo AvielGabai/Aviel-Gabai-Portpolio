@@ -1,0 +1,35 @@
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--darkPurple);
+    color: var(--textColor);
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    transition: 0.5s;
+}
+
+#home img {
+    padding-top: 20vh;
+}
+
+#home h3 {
+    font-size: 2em;
+    margin: 20px;
+}
+
+#home h3 span {
+    color: var(--darkPink);
+}
+
+@media(max-width : 768px) {
+    #home img {
+        width: 300px;
+    }
+
+    #home h3 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,31 @@
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    background: $background_color_3 0% 0% no-repeat padding-box;
+    margin: 10px;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.card h3 {
+    font: normal normal 900 30px/44px Heebo;
+    color: $text_color_2;
+}
+
+.card p {
+    font: normal normal normal 15px/22px Heebo;
+    color: $text_color_1;
+}
+
+.card ion-icon{
+    font-size: 50px;
+}
+@media (max-width: 992px) {
+    .cards {
+        display: block;
+    }
+    
+}

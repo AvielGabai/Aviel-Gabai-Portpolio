@@ -1,0 +1,27 @@
+header {
+    color: text_color_1;
+    background-color: $background_color_1;
+    padding: 50px 150px;
+    direction: rtl;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+header .text {
+    margin: auto 150px;
+}
+
+header .text h1 {
+    font: normal normal 900 66px/97px Heebo;
+}
+
+header .text p {
+    font: normal normal normal 20px/29px Heebo;
+}
+@media (max-width: 992px) {
+    header {
+        display: block;
+    }
+    
+}

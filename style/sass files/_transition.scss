@@ -1,0 +1,47 @@
+.transition{
+    min-height: 100vh;
+    background: var(--darkPurple);
+    color: var(--textColor);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+}
+
+.transition .transitionTitle{
+    font-weight: 800;
+    font-size: 3em;
+    padding: 20px;
+}
+
+.transition .btns a{
+    font-size: 1em;
+    font-weight: 800;
+    padding: 20px;
+    margin: 0 10px;
+    color: var(--darkPurple);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(45deg, var(--naturalBlue), var(--darkPink));
+}
+
+.transition .btns a:hover{
+    transform: scale(1.05);
+}
+
+.transition img{
+    max-width: 700px;
+    width: 80vw;
+    border: 5px solid var(--darkPink);
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.transition footer{
+    width: 100vw;
+    margin-top: 50px;
+}

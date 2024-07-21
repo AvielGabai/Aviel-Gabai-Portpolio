@@ -1,0 +1,16 @@
+* {
+    direction: rtl !important;
+}
+
+.img {
+    height: 35%;
+}
+
+.fa:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.card {
+    margin: .5em;
+}

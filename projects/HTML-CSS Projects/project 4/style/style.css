@@ -1,0 +1,97 @@
+/*------------fonts--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+/* Assistant */
+/*-------------------------------*/
+/*-------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------*/
+/*-------------------------------*/
+.container section {
+    background: transparent url('../images/bgPic.png') 0% 0% no-repeat padding-box;
+    height: 100vh;
+    margin-top: -10vh;
+    background-position: center;
+}
+
+.container section h1 {
+    text-align: center;
+    font: normal normal bold 86px/113px Assistant;
+    color: #D3E10E;
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+.container section p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+}
+
+
+.container form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.container form aside {
+    text-align: right;
+    font: normal normal bold 16px/21px Assistant;
+    color: #011560;
+}
+
+.container form aside input {
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    height: 50px;
+    width: 400px;
+    border-bottom: 5px solid #D3E10E;
+    margin-left: 40px;
+}
+
+.container form input {
+    text-align: center;
+    font: normal normal bold 22px/30px Assistant;
+    letter-spacing: 0.33px;
+    color: #011560;
+    height: 50px;
+    width: 150px;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+}
+
+.btn {
+    margin-top: 21px;
+}
+
+/*-------------------------------*/
+/*--------------media------------*/
+@media (max-width: 992px)
+/* Large */
+    {
+    .container form {
+        display: block;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .container form aside{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .container form input{
+        width: 80vw;
+    }
+    .container form aside input{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container form aside label{
+        text-align: right;
+    }
+}

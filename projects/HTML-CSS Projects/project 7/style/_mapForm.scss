@@ -1,0 +1,51 @@
+.mapForm {
+    display: flex;
+    direction: rtl;
+    justify-content: space-evenly;
+}
+
+form {
+    background: $background_color_4 0% 0% no-repeat padding-box;
+    width: 40vw;
+    padding: 50px;
+}
+
+form input {
+    height: 50px;
+    width: 80%;
+}
+
+form #bigInput {
+    height: 200px;
+}
+
+form h2 {
+    font: normal normal 900 46px/67px Heebo;
+    color: $text_color_3;
+    margin: 10px;
+}
+
+form p {
+    font: normal normal normal 15px/22px Heebo;
+    color: text_color_1;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+form label {
+    font: normal normal bold 13px/19px Heebo;
+    color: $text_color_4;
+}
+
+.map {
+    background: $background_color_1 0% 0% no-repeat padding-box;
+    padding: 30px;
+}
+
+
+@media (max-width: 992px) {
+    .mapForm {
+        display: block;
+    }
+    
+}

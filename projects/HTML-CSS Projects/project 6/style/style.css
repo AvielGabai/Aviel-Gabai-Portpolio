@@ -1,0 +1,179 @@
+/*------------fonts--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+/*-------------------------------*/
+/*-------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+}
+
+/*-------------------------------*/
+/*----------right part-----------*/
+.container .rightPart img {
+    width: 500px;
+    margin: 100px;
+}
+
+/*-------------------------------*/
+/*----------left part------------*/
+.container .leftPart {
+    width: 100vw;
+}
+
+.container .leftPart .form {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.container .leftPart .form h1 {
+    font: normal normal 900 66px/97px Heebo;
+    color: #FDBD03;
+    margin: 15px;
+}
+
+.container .leftPart .form p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #020253;
+    width: 385px;
+    margin: 38px;
+    align-self: flex-end;
+}
+
+.container .leftPart .form {
+    font: normal normal bold 16px/24px Heebo;
+    color: #2C2C2C;
+}
+
+.container .leftPart .form .details .topPart {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+/*-------------------------------*/
+/*------------logos--------------*/
+.logo {
+    border-radius: 50%;
+    background-color: #FDBD03;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 40px 20px;
+    padding: 10px;
+}
+
+.container .leftPart .logos {
+    display: flex;
+}
+
+/*-------------------------------*/
+/*----------yellow lines---------*/
+.line {
+    height: 18px;
+    background-color: #FDBD03;
+}
+
+.container .rightPart .line {
+    width: 50%;
+    float: right;
+}
+
+.container .leftPart .line {
+    width: 100%;
+}
+
+/*-------------------------------*/
+/*-------------input-------------*/
+.container .leftPart .form .details .topPart input {
+    height: 50px;
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.container .leftPart .form .details input {
+    height: 150px;
+    width: 80%;
+    width: 630px;
+}
+
+input {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border-bottom: 3px solid #FDBD03;
+}
+
+/*-------------------------------*/
+/*--------------btn--------------*/
+.container .leftPart .form #send {
+    height: 50px;
+    width: 150px;
+    align-self: flex-end;
+    margin-top: 80px;
+    margin-bottom: 400px;
+    color: #000000;
+    font: normal normal bold 22px/30px Heebo;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    border: 0;
+}
+
+/*-------------------------------*/
+/*--------------media------------*/
+@media (max-width: 768px)
+/*  */
+    {
+    .container {
+        display: block;
+    }
+
+    .container .rightPart .line {
+        width: 85%;
+    }
+
+    .container .rightPart img {
+        display: block;
+        width: 150px;
+        margin: 50px auto;
+    }
+
+    .container .leftPart #whatsapp {
+        display: none;
+    }
+
+    .container .leftPart .form {
+        text-align: center;
+    }
+
+    .container .leftPart .form p {
+        align-self: center;
+    }
+
+    .container .leftPart .form .details .topPart {
+        display: block;
+    }
+    .container .leftPart .form .details .topPart aside input{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .container .leftPart .form .details input{
+        width: 80vw;
+    }
+    .container .leftPart .form #send{
+        width: 80vw;
+        margin: 30px auto;
+        margin-bottom: 150px;
+    }
+    .container .leftPart .logos {
+        justify-content: space-evenly;
+    }
+}
+
+/*-------------------------------*/

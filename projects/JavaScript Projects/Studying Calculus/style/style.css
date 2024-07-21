@@ -1,0 +1,69 @@
+/* Heebo Font */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+/* Twisted Spot Palette */
+:root {
+    --primary: #00C9C8;
+    --secondry: #47817F;
+    --background: #BFFCF9;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    margin: 20px;
+    background-color: var(--background);
+}
+
+#exercise {
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 3px solid var(--secondry);
+    background-color: var(--white);
+    font-weight: 600;
+
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary);
+}
+
+button{
+    border: 2px solid var(--black);
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    font-weight: 600;
+}

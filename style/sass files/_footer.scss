@@ -1,0 +1,25 @@
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--darkPurple);
+    color: var(--textColor);
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border-top: 3px solid whitesmoke;
+}
+
+footer h2 {
+    font-size: 1em;
+}
+
+footer button {
+    font-size: 1.5em;
+    border-radius: 10px;
+    background: linear-gradient(45deg, var(--naturalBlue), var(--darkPink));
+    color: var(--darkPurple);
+    cursor: pointer;
+}

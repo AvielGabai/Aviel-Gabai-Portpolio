@@ -1,0 +1,98 @@
+/* Heebo font link */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors and sizes */
+:root {
+    --mainBg: #ffffff;
+    --secondBg: #1a1a1ad4;
+    --thirdBg: #D31C75;
+    --textColor: #f9f9f9;
+    --textFont: Heebo;
+    --textSize: 20px;
+    --titleSize: 34px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--mainBg);
+}
+
+.container .bgImage {
+    height: 60vh;
+    width: 100vw;
+    background: transparent url('../images/webBgPic.png') 0% 0% no-repeat padding-box;
+}
+
+.container .formBox {
+    position: absolute;
+    top: 100px;
+    right: 10vw;
+    height: 600px;
+    width: 500px;
+    background: var(--secondBg);
+    text-align: right;
+    color: var(--textColor);
+    font-family: var(--textFont);
+}
+
+.container .formBox .formDetails {
+    margin: 50px;
+}
+
+.container .formBox .formDetails h2 {
+    text-align: center;
+    font-size: var(--titleSize);
+    margin-bottom: 10px;
+}
+
+.container .formBox .formDetails p {
+    text-align: center;
+    font-size: var(--textSize);
+    margin-bottom: 40px;
+}
+
+.container .formBox .formDetails .details label {
+    text-align: right;
+}
+
+.container .formBox .formDetails .details input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--thirdBg);
+}
+
+.container .formBox .formDetails .btnSend {
+    width: 165px;
+    height: 50px;
+    text-align: center;
+    font: bold 20px var(--textFont);
+    color: var(--textColor);
+    background: var(--thirdBg);
+}
+
+/* media */
+
+@media (max-width: 768px) {
+    .container .bgImage {
+        background: transparent url('../images/deviceBgPic.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+    }
+
+    .container .formBox {
+        margin-inline: auto;
+        right: 0;
+        left: 0;
+        width: 90vw;
+        height: 80vh;
+    }
+}

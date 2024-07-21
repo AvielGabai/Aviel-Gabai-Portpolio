@@ -1,0 +1,84 @@
+/* Heebo Font */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+/* Twisted Spot Palette */
+:root {
+    --primary: #00C9C8;
+    --secondry: #47817F;
+    --background: #BFFCF9;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background);
+    margin: 0;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 40px;
+    background-color: var(--primary);
+    text-align: center;
+    font-weight: 800;
+}
+
+h1 {
+    margin: 0;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--white);
+    border: 5px solid var(--secondry);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#reset-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    border: 3px solid var(--secondry);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#reset-button:hover {
+    background-color: var(--secondry);
+}

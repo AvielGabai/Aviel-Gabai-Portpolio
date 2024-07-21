@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: transparent linear-gradient(#281EFF 0%, #2DFF8C) no-repeat;
+}
+
+.container {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container .info {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.container .info .details {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.container .info .details input {
+    background: #F6F6F624;
+    border: 2px solid #FFFFFF;
+    height: 50px;
+    width: 300px;
+
+}
+
+.container .info .details label {
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+}
+
+.container .info .btn {
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #1C1C1C;
+    background: #FFFFFF;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+
+}
+
+.container .info .name,
+.container .info .email {
+    margin: 0 10px;
+}
+
+.container h1 {
+    font: normal normal normal 160px/231px Satisfy;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    margin-top: 150px;
+}
+
+.container h2 {
+    font: normal normal normal 32px/38px Varela Round;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.container p {
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+}
+
+/* media */
+@media (max-width: 992px) {
+    .container h1 {
+        font-size: 60px;
+    }
+
+    .container .info {
+        display: block;
+    }
+
+    .container .info .details {
+        display: block;
+    }
+
+    .container .info .details input {
+        width: 100%;
+    }
+
+    .container .info .btn {
+        width: 100%;
+    }
+
+    .container .info .name,
+    .container .info .email {
+        margin: 0;
+    }
+}

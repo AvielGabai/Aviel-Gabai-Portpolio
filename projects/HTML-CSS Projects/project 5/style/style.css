@@ -1,0 +1,205 @@
+/*------------fonts--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+/* Assistant */
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&display=swap');
+/* Heebo */
+
+/*-------------------------------*/
+/*-------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    margin: 100px;
+    grid-template-rows: repeat(6, 200px);
+    grid-template-columns: repeat(4, 200px);
+    gap: 30px;
+    grid-template-areas:
+        "img01 img02 title title"
+        "img03 img04 title title"
+        "img05 img06 img07 img08"
+        "form form img09 img10"
+        "form form img11 img12"
+        "form form img13 img14";
+}
+
+/*-------------------------------*/
+/*-----------title---------------*/
+.title {
+    grid-area: title;
+    background: #020253 0% 0% no-repeat padding-box;
+}
+
+.title h1 {
+    text-align: center;
+    font: normal normal bold 61px/80px Assistant;
+    color: #0EE1DA;
+    margin-top: 33%;
+}
+
+.title p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+}
+
+/*-------------------------------*/
+/*-------------form--------------*/
+.form {
+    grid-area: form;
+    background: #8E097C 0% 0% no-repeat padding-box;
+}
+
+.form h2 {
+    text-align: center;
+    font: normal normal bold 35px/46px Assistant;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.form p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+    margin-bottom: 40px;
+}
+
+.form .btn {
+    text-align: right;
+    font: normal normal bold 24px/33px Heebo;
+    color: #011560;
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+.form .details {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    color: #0EE1DA;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+input {
+    border-bottom: 5px solid #0EE1DA;
+    height: 60px;
+    width: 100%;
+}
+
+.experience {
+    height: 170px;
+}
+
+/*-------------------------------*/
+/*------------image--------------*/
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+#img01 {
+    grid-area: img01;
+}
+
+#img02 {
+    grid-area: img02;
+}
+
+#img03 {
+    grid-area: img03;
+}
+
+#img04 {
+    grid-area: img04;
+}
+
+#img05 {
+    grid-area: img05;
+}
+
+#img06 {
+    grid-area: img06;
+}
+
+#img07 {
+    grid-area: img07;
+}
+
+#img08 {
+    grid-area: img08;
+}
+
+#img09 {
+    grid-area: img09;
+}
+
+#img10 {
+    grid-area: img10;
+}
+
+#img11 {
+    grid-area: img11;
+}
+
+#img12 {
+    grid-area: img12;
+}
+
+#img13 {
+    grid-area: img13;
+}
+
+#img14 {
+    grid-area: img14;
+}
+
+/*-------------------------------*/
+/*---------------media-----------*/
+@media (max-width: 768px) {
+    body {
+        background-image: linear-gradient(#020253 0%,
+                #020253 16.67%,
+                #E5EEFF 16.67%,
+                #E5EEFF 100%);
+    }
+
+    .container {
+        grid-template-rows: repeat(12, 200px);
+        grid-template-columns: repeat(2, 200px);
+        margin: 30px;
+        margin-bottom: 60px;
+        grid-template-areas:
+            "title title"
+            "title title"
+            "img01 img02"
+            "img03 img04"
+            "img05 img06"
+            "img07 img08"
+            "form form"
+            "form form"
+            "form form"
+            "img09 img10"
+            "img11 img12"
+            "img13 img14";
+    }
+}
+
+
+
+/*-------------------------------*/
